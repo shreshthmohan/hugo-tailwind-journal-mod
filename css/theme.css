@@ -1,3 +1,49 @@
 @tailwind base;
+
+a {
+  @apply text-blue-700 leading-tight;
+}
+
+a:hover {
+  @apply underline;
+}
+a:visited {
+  @apply text-purple-700;
+}
+a:visited:hover {
+  @apply underline;
+}
+
 @tailwind components;
 @tailwind utilities;
+
+
+pre {
+
+  background-color: #f7f7f7;
+    display: block;
+    line-height: 1.5;
+    margin: 0 0 1.5625em;
+    overflow: auto;
+    padding: .8125em;
+    tab-size: 4;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+pre.chroma {
+
+  @apply mt-4;
+}
+
+code {
+  @apply bg-gray-100 px-1 rounded-md;
+}
+
+h2 {
+  @apply text-2xl font-semibold;
+}
+
+ body {
+   @apply text-gray-800;
+ }
